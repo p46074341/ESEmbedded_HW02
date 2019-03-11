@@ -65,8 +65,7 @@ Please take your note here.
 	3. Design test code main.s, from _strat to excute the instructions sequentially, observing the difference between each steps.
 	![image 5](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/5.png)
 	4. Complier main.s and simulate by qemu,% make clean , % make , % make qemu , then open the other Terminal to connect % arm-none-eabi-gdb, then enter target remote 127.0.0.1:1234 and press ctrl+x and 2 twice, open the regester and instrcution, enter si to observe step by step.
-	find out in qemu the order of PUSH and POP will automatically arrange sequentially from lower to higher reg and excute the mov
-	instruction part 
+		find out in qemu the order of PUSH and POP will automatically arrange sequentially from lower to higher reg and excute the part of mov instruction  
 	![image 1](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/1.png)
 	  excute the first PUSH and observe the change in pc, sp and MSP
 	![image 2](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/2.png)
