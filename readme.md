@@ -78,4 +78,4 @@ Please take your note here.
 3. Result and Disscution
 	From the observation, I can find out that the instrucions will automaticaly arrange the reg order from lower to higher, and whetehr change 
 	the order of reg in PUSH and POP instrucion, the result are same, it means the different order won't affect the excution results.
-	The highest reg will be pushed into the stack first, in my tset, r2 is the highest.
+	The lowest reg will be pushed into the stack first, in my tset, r0 is the lowest.
