@@ -58,24 +58,30 @@ This is the hw02 sample. Please follow the steps below.
 Please take your note here.
 
 1. Experiment Question
-write a simple assembly language to observe the instructions push and pop.
+	
+	write a simple assembly language to observe the instructions push and pop.
 2. Experiment Procedures
+
 	1. Copy the emu-mcu-eclipse-qemu die completely to ESEmbedded_HW02
 	2. Accroding to the descriptions of PUSH and POP in ARM information center.
 	3. Design test code main.s, from _strat to excute the instructions sequentially, observing the difference between each steps.
 	![image 5](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/5.png)
 	4. Complier main.s and simulate by qemu,% make clean , % make , % make qemu , then open the other Terminal to connect % arm-none-eabi-gdb, then enter target remote 127.0.0.1:1234 and press ctrl+x and 2 twice, open the regester and instrcution, enter si to observe step by step.
 		
-		find out in qemu the order of PUSH and POP will automatically arrange sequentially from lower to higher reg and excute the part of mov instruction  
+	find out in qemu the order of PUSH and POP will automatically arrange sequentially from lower to higher reg and excute the part of mov instruction  
 	![image 1](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/1.png)
+	
 	  excute the first PUSH and observe the change in pc, sp and MSP
 	![image 2](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/2.png)
+	
 	  excute the first POP, the r3, r4 and r5 chnage the values which are from r0, r1, r2 
 	![image 3](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/3.png)
+	
 	  excute all the instructions, the result seems not to be affected by the difference of sequence  
 	![image 4](https://github.com/p46074341/ESEmbedded_HW02/blob/master/picture/4.png)
 		 
 3. Result and Disscution
+
 	From the observation, I can find out that the instrucions will automaticaly arrange the reg order from lower to higher, and whetehr change 
 	the order of reg in PUSH and POP instrucion, the result are same, it means the different order won't affect the excution results.
 	The lowest reg will be pushed into the stack first, in my tset, r0 is the lowest.
