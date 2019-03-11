@@ -58,7 +58,7 @@ This is the hw02 sample. Please follow the steps below.
 Please take your note here.
 
 1. Experiment Question
-		write a simple assembly language to observe the instructions push and pop.
+write a simple assembly language to observe the instructions push and pop.
 2. Experiment Procedures
 	1. Copy the emu-mcu-eclipse-qemu die completely to ESEmbedded_HW02
 	2. Accroding to the descriptions of PUSH and POP in ARM information center.
